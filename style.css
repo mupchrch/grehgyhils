@@ -1,0 +1,105 @@
+html, body, pre, code, kbd, samp {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 0.9em;
+}
+
+body {
+  background: linear-gradient(179deg, #97b2dc, #467b8d);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 26%}
+  50%{background-position:100% 75%}
+  100%{background-position:0% 26%}
+}
+
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 26%}
+  50%{background-position:100% 75%}
+  100%{background-position:0% 26%}
+}
+
+@keyframes AnimationName { 
+  0%{background-position:0% 26%}
+  50%{background-position:100% 75%}
+  100%{background-position:0% 26%}
+}
+
+.page-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+.nes-container {
+  background-color: white;
+  margin: 10px !important;
+}
+
+.nes-container>:last-child {
+  margin-bottom: 16px !important;
+}
+
+.nes-bcrikko {flex-shrink: 0}
+.nes-bcrikko.first-person::before {color: #f3a07c}
+.nes-bcrikko.second-person::before {color: #9ad9ff}
+.message-area {
+  width: 80%;
+  color: black !important;
+  border-image-outset: 2 !important;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+}
+
+.has-shadow {box-shadow: 0 0 32px black}
+.message .nes-balloon {margin: 30px}
+.shout-out {
+  font-size: 0.75em;
+  padding: 0.5em !important;
+  line-height: normal;
+  margin-top: auto !important;
+  border-image-outset: 1 !important;
+  border-image-width: 1.5 !important;
+}
+
+.octo {
+  width: 120px;
+  height: 130px;
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+}
+
+a.nes-icon:hover::before {
+  opacity: 0.5;
+}
+
+@-webkit-keyframes bubble-upwards{0%{top:100%}100%{top:-130px}}
+@-webkit-keyframes bubble-sway{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}
+@keyframes bubble-upwards{0%{top:100%}100%{top:-130px}}
+@keyframes bubble-sway{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}
+.riser{position:fixed;top:-130px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:bubble-upwards,bubble-sway;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:bubble-upwards,bubble-sway;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}
+.riser:nth-of-type(1){left:-5%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}
+.riser:nth-of-type(2){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}
+.riser:nth-of-type(3){left:15%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}
+.riser:nth-of-type(4){left:40%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}
+.riser:nth-of-type(5){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}
+.riser:nth-of-type(6){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}
+.riser:nth-of-type(7){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}
+.riser:nth-of-type(8){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}
+.riser:nth-of-type(9){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+.riser:nth-of-type(10){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}
+.riser:nth-of-type(11){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}
+.riser:nth-of-type(12){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
